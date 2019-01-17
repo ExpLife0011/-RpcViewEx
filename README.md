@@ -1,39 +1,25 @@
-# RpcViewMSVS
+RpcViewMSVS
 
 #### 介绍
-{**以下是码云平台说明，您可以替换此简介**
-码云是开源中国推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用码云实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
-
-#### 软件架构
-软件架构说明
-
+RpcView移植vs2013项目,去除rpcrt4.dll文件版本验证,支持win7x64和2008r2x64操作系统,已发布64位release版本
 
 #### 安装教程
 
-1. xxxx
-2. xxxx
-3. xxxx
+1. 下载qt安装包 http://iso.mirrors.ustc.edu.cn/qtproject/archive/qt/5.6/5.6.0/qt-opensource-windows-x86-msvc2013_64-5.6.0.exe
+2. 下载qtvs插件 http://mirrors.ustc.edu.cn/qtproject/archive/vsaddin/qt-vsaddin-msvc2013-2.2.2.vsix
+2. 打开vs菜单栏QTVSTool->QTOption添加变量msvc2013_64值C:\Qt\Qt5.6.0\5.6\msvc2013_64
+2. 添加环境变量C:\Qt\Qt5.6.0\5.6\msvc2013_64\bin和C:\Qt\Qt5.6.0\Tools\QtCreator\bin
+3. 编译MyRpcView项目MyRpcView
+4. 运行Build\MyRpcView.exe
 
 #### 使用说明
 
-1. xxxx
-2. xxxx
-3. xxxx
+1. 不同操作操作系统版本,替换项目RpcCore下RpcInternals.h为以下文件
+MyRpcView\MyRpcView\RpcViewMain\RpcCore\RpcCore1_32bits\RpcInternals.h for Windows XP
+MyRpcView\MyRpcView\RpcViewMain\RpcCore\RpcCore2_32bits\RpcInternals.h for Windows 7 x86
+MyRpcView\MyRpcView\RpcViewMain\RpcCore\RpcCore2_64bits\RpcInternals.h for Windows 7 x64
+MyRpcView\MyRpcView\RpcViewMain\RpcCore\RpcCore3_32bits\RpcInternals.h for Windows 8 x86
+MyRpcView\MyRpcView\RpcViewMain\RpcCore\RpcCore3_64bits\RpcInternals.h for Windows 8 x64
+MyRpcView\MyRpcView\RpcViewMain\RpcCore\RpcCore4_32bits\RpcInternals.h for Windows 8.1 and 10 x86
+MyRpcView\MyRpcView\RpcViewMain\RpcCore\RpcCore4_64bits\RpcInternals.h for Windows 8.1 and 10 x64
 
-#### 参与贡献
-
-1. Fork 本仓库
-2. 新建 Feat_xxx 分支
-3. 提交代码
-4. 新建 Pull Request
-
-
-#### 码云特技
-
-1. 使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2. 码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3. 你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4. [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5. 码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6. 码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
