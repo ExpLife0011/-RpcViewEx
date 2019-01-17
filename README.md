@@ -32,3 +32,5 @@ MyRpcView\MyRpcView\RpcViewMain\RpcCore\RpcCore4_64bits\RpcInternals.h for Windo
 
 下载地址https://gitee.com/cbwang505/RpcViewMSVS里面有release发布欢迎fork
 
+
+![](https://i.imgur.com/9qVs6hd.png)
